@@ -1,8 +1,8 @@
 CREATE TABLE "todos" (
-	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
-	"title" varchar(500) NOT NULL,
-	"description" varchar(1000),
-	"completed" boolean DEFAULT false,
-	"createdAt" timestamp with time zone DEFAULT now(),
-	"updatedAt" timestamp with time zone DEFAULT now()
+	"id" UUID PRIMARY KEY DEFAULT GEN_RANDOM_UUID() NOT NULL,
+	"title" VARCHAR(500) NOT NULL,
+	"description" VARCHAR(1000),
+	"completed" BOOLEAN DEFAULT FALSE,
+	"createdAt" TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+	"updatedAt" TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
