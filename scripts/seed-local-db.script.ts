@@ -3,7 +3,18 @@ import * as schema from '../server/db/schema'
 import { seed } from 'drizzle-seed'
 
 const seedDb = async () => {
-    await seed(db,schema)
+    await seed(db,schema).refine((funcs) => ({
+    todos: {
+      columns: {
+        title: funcs.valuesFromArray({
+          values: ['Buy groceries', 'read a book', 'call mom'],
+        }),
+        description: funcs.valuesFromArray({
+          values: ['at 5pm', 'weekly', 'carefully', undefined],
+        }),
+      },
+    },
+  }));
 }
 
 seedDb().then(() => {
