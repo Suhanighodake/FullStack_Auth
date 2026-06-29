@@ -8,9 +8,11 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio",
-    "db:seed": "bun run ./scripts/seed-local-db.script.ts"
+    "db:seed": "bun run ./scripts/seed-local-db.script.ts",
+    "open-auth-docs": "open-cli http://localhost:3000/api/auth/reference"
   },
   "dependencies": {
+    "better-auth": "^1.6.22",
     "drizzle-orm": "^0.45.2",
     "hono": "^4.12.26",
     "pg": "^8.22.0"
@@ -21,6 +23,7 @@
     "concurrently": "^10.0.3",
     "dotenv": "^17.4.2",
     "drizzle-kit": "^0.31.10",
-    "drizzle-seed": "^0.3.1"
+    "drizzle-seed": "^0.3.1",
+    "open-cli": "^9.0.0"
   }
 }

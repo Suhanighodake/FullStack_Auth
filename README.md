@@ -10,7 +10,7 @@ bun run db:migrate
 ```
 
 3. To run:
-```sh
+```sh  
 bun run dev
 ```
 
