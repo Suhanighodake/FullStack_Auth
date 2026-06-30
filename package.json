@@ -24,6 +24,7 @@
     "dotenv": "^17.4.2",
     "drizzle-kit": "^0.31.10",
     "drizzle-seed": "^0.3.1",
-    "open-cli": "^9.0.0"
+    "open-cli": "^9.0.0",
+    "typescript": "5.9"
   }
 }

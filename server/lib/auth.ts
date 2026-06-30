@@ -13,6 +13,6 @@ export const auth = betterAuth({
     emailAndPassword: {
         enabled: true,
     },
-    trustedOrigins: [process.env.CLINT_URL!],
+    trustedOrigins: [process.env.CLIENT_URL!],
     plugins: [openAPI()],
 });
