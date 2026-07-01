@@ -32,7 +32,7 @@ function RouteComponent() {
      setLoading(true)
 
       try {  
-       authClient.signUp.email({
+       await authClient.signUp.email({
         name,
         email,
         password,  
