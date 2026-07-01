@@ -1,7 +1,7 @@
 import { createFileRoute,Link,useRouter } from '@tanstack/react-router'
 import { CircleX, KeyRound,  Mail, User } from 'lucide-react'
 import { authClient } from '../lib/auth-client'
-import  React , { useState } from 'react'
+import  React , { useEffect, useState } from 'react'
 
 export const Route = createFileRoute('/signup')({
   component: RouteComponent,
@@ -17,9 +17,11 @@ function RouteComponent() {
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)  
 
-  if (session) {
-    router.navigate({to: '/todos'})
-  }
+  useEffect(() => {
+    if (session) {
+      router.navigate({ to: '/todos' })
+    }
+  }, [session, router])
 
   const handleSubmit = async  (e: React.FormEvent)=> {
      e.preventDefault()
