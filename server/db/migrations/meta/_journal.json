@@ -15,6 +15,13 @@
       "when": 1782728940621,
       "tag": "0001_closed_sugar_man",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1782894563861,
+      "tag": "0002_stiff_absorbing_man",
+      "breakpoints": true
     }
   ]
 }
