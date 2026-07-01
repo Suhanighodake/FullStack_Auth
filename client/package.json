@@ -29,6 +29,7 @@
     "@tanstack/react-router-ssr-query": "latest",
     "@tanstack/react-start": "latest",
     "@tanstack/router-plugin": "^1.132.0",
+    "better-auth": "^1.6.23",
     "drizzle-kit": "^0.31.9",
     "drizzle-orm": "^0.45.1",
     "lucide": "^1.22.0",
