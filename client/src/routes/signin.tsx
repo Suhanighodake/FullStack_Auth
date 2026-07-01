@@ -23,6 +23,7 @@ function RouteComponent() {
     e.preventDefault()
     setError('')
     setLoading(true)
+    
 
     try {
       await authClient.signIn.email({
